@@ -1,3 +1,6 @@
+" Load additional modules
+call pathogen#infect()
+
 "highlight searched word
 set hlsearch
 "goes to search as soon as finds a matching point
@@ -23,9 +26,10 @@ set encoding=utf-8
 set autoindent
 " UI
 set t_Co=256
+let g:solarized_termcolors=256
 set background=dark
-" colorscheme solarized
-colors zenburn
+colorscheme solarized
+
 " Visualize tabs and linebreaks
 set list
 set listchars=tab:▸\ ,eol:¬
